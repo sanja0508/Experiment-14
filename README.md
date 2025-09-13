@@ -4,15 +4,25 @@ Aim: To understand and implement the concepts of Single Inheritance, Multiple In
 
 Software Required: Visual Studio
 
-Theory: In C++, inheritance is a mechanism that allows one class (derived class) to acquire properties and behaviors (methods) of another class (base class). This provides a way to establish a relationship between classes and promote reusability.
-Single Inheritance: In single inheritance, a derived class inherits from a single base class. This is the simplest form of inheritance in which one class inherits from another.
-Multiple Inheritance: In multiple inheritance, a derived class inherits from two or more base classes. This allows the derived class to combine the features of multiple base classes.
-Multilevel Inheritance: In multilevel inheritance, a class derives from another class, which in turn derives from another class. This creates a chain of inheritance.
+Theory: Inheritance is one of the four fundamental concepts of Object-Oriented Programming (OOP). It allows a new class (derived class) to take on the attributes and behaviors of an existing class (base class). This mechanism promotes reusability, extendability, and makes code more modular and easier to maintain.
+In C++, inheritance allows a derived class to inherit data members and member functions from a base class. The derived class can modify or extend the functionality of the base class.
+There are several types of inheritance in C++:
+Single Inheritance: In single inheritance, a derived class inherits from only one base class. This is the most straightforward form of inheritance where a class extends the functionality of a single class.
+Example: A Student class can inherit properties from a College class.
+
+Multiple Inheritance: In multiple inheritance, a derived class can inherit from more than one base class. This allows a class to inherit characteristics and behaviors from multiple classes.
+Example: A Professor class can inherit from both Teacher and Experience classes, enabling the professor to have properties and methods of both the teacher and the experience.
+
+Multilevel Inheritance: In multilevel inheritance, a class derives from another class, which in turn is derived from another class. This creates a hierarchy of classes.
+Example: A Store class inherits from Mobile, and Mobile in turn inherits from Device. This establishes a chain of inheritance from Device → Mobile → Store.
 
 Concepts Covered:
 Single Inheritance: One class inherits from another.
-Multiple Inheritance: A derived class inherits from more than one class.
-Multilevel Inheritance: A class derives from another, forming a chain of inheritance.
+Multiple Inheritance: A derived class inherits from two or more base classes.
+Multilevel Inheritance: A class inherits from another class, forming a chain of inheritance.
+Access Control: Inherited members of a base class are inherited with different access specifiers. In C++, public inheritance allows the derived class to access the public and protected members of the base class.
+
+Constructor and Destructor Behavior: In inherited classes, constructors and destructors are automatically invoked for the base class and derived class. The constructor of the base class is called first, followed by the constructor of the derived class.
 
 Conclusion: In this experiment, we successfully implemented and observed the behavior of the following types of inheritance in C++:
 Single Inheritance: A derived class inherits from one base class, allowing the reuse of functionality from the base class.
