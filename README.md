@@ -24,6 +24,31 @@ Access Control: Inherited members of a base class are inherited with different a
 
 Constructor and Destructor Behavior: In inherited classes, constructors and destructors are automatically invoked for the base class and derived class. The constructor of the base class is called first, followed by the constructor of the derived class.
 
+Algorithms:
+1. Single Inheritance Algorithm:
+Input: None.
+Process: Create a base class College with attributes and methods.
+Create a derived class Student inheriting from College.
+Initialize the attributes and call the methods from the base class in the derived class.
+Display the inherited properties and additional properties of the derived class.
+Output: The details of the college and student are displayed.
+
+2. Multiple Inheritance Algorithm:
+Input: None.
+Process: Create two base classes: Teacher and Experience, each with their respective attributes and methods.
+Create a derived class Professor inheriting from both Teacher and Experience.
+Initialize the attributes and call methods from both base classes in the derived class.
+Display the details of the professor, including their experience and subject taught.
+Output: The details of the professor are displayed with attributes from both base classes.
+
+3. Multilevel Inheritance Algorithm:
+Input: None.
+Process: Create a base class Device with common attributes and methods.
+Create a derived class Mobile that inherits from Device.
+Create a further derived class Store that inherits from Mobile.
+Display the details of the store, including the device and mobile properties.
+Output: The details of the store, including its available mobile device, brand, and category, are displayed.
+
 Conclusion: In this experiment, we successfully implemented and observed the behavior of the following types of inheritance in C++:
 Single Inheritance: A derived class inherits from one base class, allowing the reuse of functionality from the base class.
 Multiple Inheritance: A derived class inherits from two or more base classes, combining functionalities from multiple sources.
